@@ -11,3 +11,11 @@
 # print(f"My name is {name} and I am {age} years old")
 
 # ここにコードを書いてください
+
+age = 20
+print(f"My age is {age}")
+
+name = "Alice"
+print(f"My name is {name}")
+
+print(f"My name is {name} and I am {age} years old")
