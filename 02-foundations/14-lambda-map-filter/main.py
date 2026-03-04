@@ -3,10 +3,13 @@
 # `map` と `lambda` を使用してください。
 numbers_q1 = [1, 2, 3, 4, 5]
 # ここにコードを書いてください
-
+squared_numbers = list(map(lambda num: num ** 2, numbers_q1))
+print(squared_numbers)
 
 # Q2: `filter` と `lambda` で条件に合う要素を抽出する
 # `numbers_q2` から偶数のみを抽出した新しいリスト `even_numbers` を作成し、表示してください。
 # `filter` と `lambda` を使用してください。
 numbers_q2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # ここにコードを書いてください
+even_numbers = list(filter(lambda num: num % 2 == 0, numbers_q2))
+print(even_numbers)
