@@ -1,13 +1,17 @@
 # Q01: List Basic
 # [1, 2, 3] というリストを作成して表示する
 # ここにコードを書いてください
+print([1, 2, 3])
 
 # Q02: List Access
 # リストの2番目の要素にアクセスして表示する
 numbers = [1, 2, 3]
 # ここにコードを書いてください
+print(numbers[1])
 
 # Q03: List Operations
 # リストの3番目の要素を4に変更して表示する
 numbers = [1, 2, 3]
 # ここにコードを書いてください
+numbers[2] = 4
+print(numbers)
