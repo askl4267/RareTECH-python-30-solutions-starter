@@ -4,6 +4,8 @@ from models import Person, Book, User
 # models.py の Person データクラスをインポートし、
 # 名前 "Alice"、年齢 20 でインスタンスを作成して表示してください。
 # 以下に処理を記述してください
+from models import Person
+print(Person("Alice", 20))
 
 
 # 問３：
@@ -12,7 +14,9 @@ from models import Person, Book, User
 # 名前 "Bob"、年齢 35 でインスタンスを作成してください。
 # "名前：..." と "年齢：..." の形式でそれぞれの属性を表示してください。
 # 以下に処理を記述してください
-
+user = User("Bob", 35)
+print(f"名前：{user.name}")
+print(f"年齢：{user.age}")
 
 # 問４：
 # 4-2. Bookクラスから各インスタンスを作成し、`print`で表示してください
@@ -22,10 +26,14 @@ from models import Person, Book, User
 
 # インスタンス２：タイトル "JavaScript基礎"、価格 1300 で作成して表示してください。
 # 以下に処理を記述してください
-
+book1 = Book("Python入門")
+book2 = Book("JavaScript基礎", 1300)
+print(book1)
+print(book2)
 
 # 問５：
 # 5-2. インスタンスを作成した後、20%の割引後の金額を表示してください
 # タイトル "AWS実践"、価格 1000 でBookインスタンスを作成してください。
 # discount() メソッドを使って20%割引後の価格を計算し、表示してください。
 # 以下に処理を記述してください
+print(Book("AWS実装", 1000).discount(20))
