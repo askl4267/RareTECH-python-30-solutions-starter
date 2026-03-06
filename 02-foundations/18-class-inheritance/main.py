@@ -8,7 +8,7 @@ class Animal:
     def speak(self):
         return f"{self.name} makes a sound"
 # ここにコードを書いてください
-
+print(Animal("Dog").speak())
 
 # Q02: Inheritance
 # Animal クラスを継承した Dog クラスを定義してください。
@@ -16,7 +16,14 @@ class Animal:
 # "Buddy" という名前で Dog クラスのインスタンスを作成し、
 # speak() メソッドを呼び出して結果を表示してください。
 # ここにコードを書いてください
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
 
+    def speak(self):
+        return f"{self.name} barks"
+
+print(Dog("Buddy").speak())
 
 # Q03: Multiple Inheritance
 # Animal クラスを継承した Cat クラスを定義してください。
@@ -25,3 +32,16 @@ class Animal:
 # "Whiskers" という名前で Cat クラスのインスタンスを作成し、
 # speak() と purr() メソッドを呼び出して結果を表示してください。
 # ここにコードを書いてください
+
+class Cat(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def speak(self):
+        return f"{self.name} meows"
+    
+    def purr(self):
+        return f"{self.name} purrs"
+
+print(Cat("Whiskers").speak())
+print(Cat("Whiskers").purr())
